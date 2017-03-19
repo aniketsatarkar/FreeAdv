@@ -44,7 +44,7 @@ abstract class DBHelper
      * @param array $resultArray
      * @return bool
      */
-    protected function checkResultArray($resultArray)
+    static protected function checkResultArray($resultArray)
     {
         if($resultArray == null || sizeof($resultArray) == 0)
             return false;
@@ -58,14 +58,14 @@ abstract class DBHelper
      * @return array|null
      * @throws Exception
      */
-    protected function getResultArray($result)
+    static protected function getResultArray($result)
     {
         if($result == null)
             throw new Exception("Query Result is null");
         else
         {
             $resultArray = mysqli_fetch_all($result, MYSQLI_ASSOC);
-            if($this->checkResultArray($resultArray))
+            if(DBHelper::checkResultArray($resultArray))
             {
                 if(sizeof($resultArray) == 1)
                     return $resultArray[0];
@@ -82,7 +82,7 @@ abstract class DBHelper
      * @param mysqli_result $result
      * @return bool
      */
-    protected function isSuccess($result)
+    static protected function isSuccess($result)
     {
         if($result != null)
             return true;
@@ -97,14 +97,14 @@ abstract class DBHelper
      * @return array|null
      * @throws Exception
      */
-    protected function getQueryData($query, $db_conn)
+    static protected function getQueryData($query, $db_conn)
     {
         if($query == null || $db_conn == null)
             throw new Exception("Argument is null");
         else
         {
             $result = mysqli_query($db_conn, $query);
-            return $this->getResultArray($result);
+            return DBHelper::getResultArray($result);
         }
     }
 
@@ -116,7 +116,7 @@ abstract class DBHelper
      * @return bool
      * @throws Exception
      */
-    protected function getQueryResult($query, $db_conn)
+    static protected function getQueryResult($query, $db_conn)
     {
         if($query == null || $db_conn == null)
             throw new Exception("Argument is null");

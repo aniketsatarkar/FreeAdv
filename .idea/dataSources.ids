@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - freeadv@localhost" uuid="b938da59-272d-4b61-bced-a9145280a06e">
+    <database-info product="MySQL" version="5.7.13-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.39 ( Revision: 3289a357af6d09ecc1a10fd3c26e95183e5790ad )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="freeadv"/>
+    <table name="account" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="first_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="username" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="mobile" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="profile_pic" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="address" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="is_active" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J3kn"/>
+      <column name="created_on" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="address_id_fk_1" columns="address" ref-table="address" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="2" deferrability="2"/>
+      <exported-key name="account_id_fk_1" table="advertiser" schema="" catalog="freeadv" columns="account_id"/>
+      <exported-key name="account_id_fk_2" table="user" schema="" catalog="freeadv" columns="account_id"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+      <index name="username_UNIQUE" unique="true" columns="username,email,mobile"/>
+      <index name="address_id_fk_1_idx" unique="false" columns="address"/>
+    </table>
+    <table name="account_advertiser_view" schema="" catalog="freeadv" type="VIEW">
+      <column name="account_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="advertiser_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="first_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="username" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="mobile" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="profile_pic" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="address" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="is_active" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J3kn"/>
+      <column name="is_varified" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J24n"/>
+      <column name="created_on" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+    </table>
+    <table name="account_user_view" schema="" catalog="freeadv" type="VIEW">
+      <column name="account_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="first_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="username" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="mobile" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="profile_pic" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="address" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="is_active" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J3kn"/>
+      <column name="newsletter_subs" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J3kn"/>
+      <column name="created_on" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+    </table>
+    <table name="address" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="line1" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="line2" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="city" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="state" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="pin" sqlType="VARCHAR" precision="6" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="address_id_fk_1" table="account" schema="" catalog="freeadv" columns="address"/>
+      <exported-key name="address_id_fk_3" table="advertisement" schema="" catalog="freeadv" columns="locality"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+    </table>
+    <table name="adv_category" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="is_available" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J3kn"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="adv_category_id_fk_2" table="advertisement" schema="" catalog="freeadv" columns="category"/>
+      <exported-key name="adv_category_id_fk_1" table="user_interest" schema="" catalog="freeadv" columns="adv_category_id"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+      <index name="name_UNIQUE" unique="true" columns="name"/>
+    </table>
+    <table name="adv_content" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="adv_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="adv_logo" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="adv_image" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="adv_title" sqlType="VARCHAR" precision="150" scale="0" nullable="false" jdbcType="12"/>
+      <column name="adv_text" sqlType="VARCHAR" precision="1200" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="advertisement_id_fk_2" columns="adv_id" ref-table="advertisement" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="adv_id_UNIQUE" unique="true" columns="adv_id"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+    </table>
+    <table name="adv_span" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="adv_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="date_from" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="date_to" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="advertisement_id_fk_4" columns="adv_id" ref-table="advertisement" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="adv_id_UNIQUE" unique="true" columns="adv_id"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+    </table>
+    <table name="adv_tag" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="adv_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="tag" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="advertisement_id_fk_3" columns="adv_id" ref-table="advertisement" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="adv_id_UNIQUE" unique="true" columns="adv_id,tag"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+    </table>
+    <table name="adv_type" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="is_available" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J3kn"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="adv_type_id_fk" table="advertisement" schema="" catalog="freeadv" columns="type"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+      <index name="name_UNIQUE" unique="true" columns="name"/>
+    </table>
+    <table name="advertisement" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="type" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="category" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="advertiser" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="locality" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="posted_on" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="is_featured" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J24n"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="address_id_fk_3" columns="locality" ref-table="address" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="adv_category_id_fk_2" columns="category" ref-table="adv_category" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="adv_type_id_fk" columns="type" ref-table="adv_type" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="advertiser_id_fk_4" columns="advertiser" ref-table="advertiser" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <exported-key name="advertisement_id_fk_2" table="adv_content" schema="" catalog="freeadv" columns="adv_id"/>
+      <exported-key name="advertisement_id_fk_4" table="adv_span" schema="" catalog="freeadv" columns="adv_id"/>
+      <exported-key name="advertisement_id_fk_3" table="adv_tag" schema="" catalog="freeadv" columns="adv_id"/>
+      <exported-key name="advertisement_id_fk_1" table="guest_response" schema="" catalog="freeadv" columns="adv_id"/>
+      <exported-key name="advertisement_id_fk_5" table="user_response" schema="" catalog="freeadv" columns="respond_to"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+      <index name="address_id_fk_3_idx" unique="false" columns="locality"/>
+      <index name="adv_category_id_fk_2_idx" unique="false" columns="category"/>
+      <index name="adv_type_id_fk_idx" unique="false" columns="type"/>
+      <index name="advertiser_id_fk_4_idx" unique="false" columns="advertiser"/>
+    </table>
+    <table name="advertisement_view" schema="" catalog="freeadv" type="VIEW">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="advertiser_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="advertiser_account_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="adv_type_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="adv_category_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="category_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="adv_type_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="adv_logo" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="adv_image" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="adv_title" sqlType="VARCHAR" precision="150" scale="0" nullable="false" jdbcType="12"/>
+      <column name="adv_text" sqlType="VARCHAR" precision="1200" scale="0" nullable="false" jdbcType="12"/>
+      <column name="date_from" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="date_to" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="address_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="posted_on" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="is_featured" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J24n"/>
+    </table>
+    <table name="advertiser" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="account_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="is_varified" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J24n"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="account_id_fk_1" columns="account_id" ref-table="account" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <exported-key name="advertiser_id_fk_4" table="advertisement" schema="" catalog="freeadv" columns="advertiser"/>
+      <exported-key name="advertiser_id_fk_1" table="message_to_advertiser" schema="" catalog="freeadv" columns="to_advertiser"/>
+      <exported-key name="advertiser_id_fk_2" table="message_to_user" schema="" catalog="freeadv" columns="from_advertiser"/>
+      <index name="account_id_UNIQUE" unique="true" columns="account_id"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+    </table>
+    <table name="all_contacts" schema="" catalog="freeadv" type="VIEW">
+      <column name="email" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+    </table>
+    <table name="all_emails" schema="" catalog="freeadv" type="VIEW">
+      <column name="email" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+    </table>
+    <table name="guest_response" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="adv_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="first_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="mobile" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="subject" sqlType="VARCHAR" precision="150" scale="0" nullable="true" jdbcType="12"/>
+      <column name="message" sqlType="VARCHAR" precision="1000" scale="0" nullable="false" jdbcType="12"/>
+      <column name="respond_on" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="advertisement_id_fk_1" columns="adv_id" ref-table="advertisement" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="adv_id_UNIQUE" unique="true" columns="adv_id,first_name,last_name,email"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+    </table>
+    <table name="message_to_advertiser" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="from_user" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="to_advertiser" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="subject" sqlType="VARCHAR" precision="150" scale="0" nullable="true" jdbcType="12"/>
+      <column name="message" sqlType="VARCHAR" precision="1000" scale="0" nullable="false" jdbcType="12"/>
+      <column name="date_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="is_seen" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J24n"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="advertiser_id_fk_1" columns="to_advertiser" ref-table="advertiser" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="user_id_fk_1" columns="from_user" ref-table="user" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+      <index name="advertiser_id_fk_1_idx" unique="false" columns="to_advertiser"/>
+      <index name="user_id_fk_1_idx" unique="false" columns="from_user"/>
+    </table>
+    <table name="message_to_user" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="from_advertiser" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="to_user" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="subject" sqlType="VARCHAR" precision="150" scale="0" nullable="true" jdbcType="12"/>
+      <column name="message" sqlType="VARCHAR" precision="1000" scale="0" nullable="false" jdbcType="12"/>
+      <column name="date_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="is_seen" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J24n"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="advertiser_id_fk_2" columns="from_advertiser" ref-table="advertiser" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="user_id_fk_2" columns="to_user" ref-table="user" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+      <index name="advertiser_id_fk_1_idx" unique="false" columns="from_advertiser"/>
+      <index name="user_id_fk_2_idx" unique="false" columns="to_user"/>
+    </table>
+    <table name="nl_subscriber" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="first_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="email" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="mobile" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="is_subscribed" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J3kn"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="first_name_UNIQUE" unique="true" columns="first_name,last_name,email"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+    </table>
+    <table name="user" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="account_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="newsletter_subs" sqlType="ENUM" precision="2" scale="0" nullable="false" jdbcType="1" def="J3kn"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="account_id_fk_2" columns="account_id" ref-table="account" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <exported-key name="user_id_fk_1" table="message_to_advertiser" schema="" catalog="freeadv" columns="from_user"/>
+      <exported-key name="user_id_fk_2" table="message_to_user" schema="" catalog="freeadv" columns="to_user"/>
+      <exported-key name="user_id_fk_4" table="user_interest" schema="" catalog="freeadv" columns="user_id"/>
+      <exported-key name="user_id_fk_3" table="user_response" schema="" catalog="freeadv" columns="response_from"/>
+      <index name="account_id_UNIQUE" unique="true" columns="account_id"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+    </table>
+    <table name="user_interest" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="adv_category_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="adv_category_id_fk_1" columns="adv_category_id" ref-table="adv_category" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="user_id_fk_4" columns="user_id" ref-table="user" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+      <index name="user_id_UNIQUE" unique="true" columns="user_id,adv_category_id"/>
+      <index name="adv_category_id_fk_1_idx" unique="false" columns="adv_category_id"/>
+    </table>
+    <table name="user_response" schema="" catalog="freeadv" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="response_from" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="respond_to" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="subject" sqlType="VARCHAR" precision="150" scale="0" nullable="true" jdbcType="12"/>
+      <column name="message" sqlType="VARCHAR" precision="1000" scale="0" nullable="false" jdbcType="12"/>
+      <column name="respond_on" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="advertisement_id_fk_5" columns="respond_to" ref-table="advertisement" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="user_id_fk_3" columns="response_from" ref-table="user" ref-schema="" ref-catalog="freeadv" ref-columns="id" update-rule="0" delete-rule="0" deferrability="2"/>
+      <index name="id_UNIQUE" unique="true" columns="id"/>
+      <index name="advertisement_id_fk_3_idx" unique="false" columns="respond_to"/>
+      <index name="user_id_fk_3_idx" unique="false" columns="response_from"/>
+    </table>
+    <procedure name="set_address" schema="" catalog="freeadv" type="1">
+      <prototype>
+        <parameter name="account_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" type="1" index="1"/>
+        <parameter name="line1" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" type="1" index="2"/>
+        <parameter name="line2" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" type="1" index="3"/>
+        <parameter name="city" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" type="1" index="4"/>
+        <parameter name="state" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" type="1" index="5"/>
+        <parameter name="pin" sqlType="VARCHAR" precision="6" scale="0" nullable="true" jdbcType="12" type="1" index="6"/>
+      </prototype>
+    </procedure>
+    <procedure name="update_address" schema="" catalog="freeadv" type="1">
+      <prototype>
+        <parameter name="account_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" type="1" index="1"/>
+        <parameter name="line1" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" type="1" index="2"/>
+        <parameter name="line2" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" type="1" index="3"/>
+        <parameter name="pune" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" type="1" index="4"/>
+        <parameter name="state" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" type="1" index="5"/>
+        <parameter name="pin" sqlType="VARCHAR" precision="6" scale="0" nullable="true" jdbcType="12" type="1" index="6"/>
+      </prototype>
+    </procedure>
+  </data-source>
+</component>

@@ -1,13 +1,6 @@
 <?php
 
-    /**
-     * function overload to include inc into script as they occur.
-     * @param string $class_name name of the class that need to be included.
-     */
-    function __autoload($class_name)
-    {
-        include_once 'inc/'. $class_name . '.inc.php';
-    }
+    include_once 'inc/EntryRoot.php';
 
     // Database connection credentials.
     $host     = "localhost";

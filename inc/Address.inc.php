@@ -8,7 +8,6 @@
  */
 class Address extends DBHelper
 {
-
     /**
      * @param mysqli|null $db_connection mysqli connection object.
      */

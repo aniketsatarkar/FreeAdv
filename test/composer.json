@@ -1,0 +1,12 @@
+{
+    "name": "aniket.satarkar/freeadv",
+    "description": "Project",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Aniket Satarkar",
+            "email": "aniketsatarkar9@gmail.com"
+        }
+    ]
+}

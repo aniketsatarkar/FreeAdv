@@ -130,7 +130,7 @@ class Database
      * @param string|null $database
      * @param string|null $socket
      */
-    private function setCredentials($host, $user, $password, $database, $socket=null)
+    public function setCredentials($host, $user, $password, $database, $socket=null)
     {
         $this->host     = $host;
         $this->user     = $user;

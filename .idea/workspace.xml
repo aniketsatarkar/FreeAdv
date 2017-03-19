@@ -16,6 +16,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/test/composer.json</pharConfigPath>
+    <pharPath>C:\ProgramData\ComposerSetup\bin\composer.phar</pharPath>
+    <phpPath>C:\xampp\php\php.exe</phpPath>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -66,48 +71,38 @@
     <favorites_list name="FreeAdvertisement" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="AdvType.inc.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/inc/AdvType.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.023952097" vertical-offset="240" max-vertical-offset="2336">
-              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-              <folding>
-                <element signature="e#6#68#0#PHP" expanded="true" />
-                <marker date="1489951643960" expanded="true" signature="514:549" placeholder="SELECT ALL F..adv_type..." />
-                <marker date="1489951643960" expanded="true" signature="514:550" placeholder="SELECT ALL F..adv_type..." />
-                <marker date="1489951643960" expanded="true" signature="819:843" placeholder="SELECT ALL F..adv_type..." />
-                <marker date="1489951643960" expanded="true" signature="1111:1160" placeholder="SELECT ALL F..adv_type..." />
-                <marker date="1489951643960" expanded="true" signature="1421:1470" placeholder="SELECT ALL F..adv_type..." />
-                <marker date="1489951643960" expanded="true" signature="1765:1803" placeholder="SELECT ALL F..adv_type..." />
-                <marker date="1489951643960" expanded="true" signature="1765:1804" placeholder="SELECT ALL F..adv_type..." />
-                <marker date="1489951643960" expanded="true" signature="1765:1809" placeholder="SELECT ALL F..adv_type..." />
-                <marker date="1489951643960" expanded="true" signature="2105:2152" placeholder="INSERT INTO ..." />
-                <marker date="1489951643960" expanded="true" signature="2530:2558" placeholder="UPDATE adv_t..." />
-                <marker date="1489951643960" expanded="true" signature="2530:2582" placeholder="UPDATE adv_t..." />
-                <marker date="1489951643960" expanded="true" signature="2530:2607" placeholder="UPDATE adv_t..." />
-                <marker date="1489951643960" expanded="true" signature="2530:2608" placeholder="UPDATE adv_t..." />
-                <marker date="1489951643960" expanded="true" signature="2908:2957" placeholder="UPDATE adv_t..." />
-                <marker date="1489951643960" expanded="true" signature="2908:2958" placeholder="UPDATE adv_t..." />
-                <marker date="1489951643960" expanded="true" signature="3254:3304" placeholder="UPDATE adv_t..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBHelper.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inc/DBHelper.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2128">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#7#69#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="Database.inc.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/inc/Database.inc.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.27303755" vertical-offset="1920" max-vertical-offset="3072">
+                  <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="DatabaseTest.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/DatabaseTest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.8397329" vertical-offset="121" max-vertical-offset="768">
+                  <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#6#90#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -132,7 +127,6 @@
         <option value="$PROJECT_DIR$/classes/DBHelpers.inc.php" />
         <option value="$PROJECT_DIR$/classes/Address.inc.php" />
         <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/inc/Database.inc.php" />
         <option value="$PROJECT_DIR$/inc/DBHelpers.inc.php" />
         <option value="$PROJECT_DIR$/test/test.php" />
         <option value="$PROJECT_DIR$/inc/Address.inc.php" />
@@ -141,16 +135,27 @@
         <option value="$PROJECT_DIR$/inc/AdvContent.inc.php" />
         <option value="$PROJECT_DIR$/inc/DBHelper.inc.php" />
         <option value="$PROJECT_DIR$/inc/AdvType.inc.php" />
+        <option value="$PROJECT_DIR$/test/composer.json" />
+        <option value="$PROJECT_DIR$/test/AddressTest.php" />
+        <option value="$PROJECT_DIR$/test/phpunit.xml" />
+        <option value="$PROJECT_DIR$/inc/Database.inc.php" />
+        <option value="$PROJECT_DIR$/test/DatabaseTest.php" />
       </list>
     </option>
   </component>
   <component name="PhpTemplates">
     <option name="NEW_PHP_CLASS_LAST_EXTENSION" value="inc" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP">
+    <include_path>
+      <path value="C:\xampp\php\PEAR" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="768" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -200,7 +205,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,25 +241,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FreeAdvertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FreeAdvertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/diagram.png" />
     <property name="database.results.filters.show" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="LayoutCode.rearrangeEntriesXML" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aniket.Hp-630\Documents\FREE_ADV\Project\FreeAdvertisement\docs" />
       <recent name="C:\Users\Aniket.Hp-630\Documents\FREE_ADV\Project\FreeAdvertisement\test" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.TEST">
+  <component name="RunManager" selected="PHPUnit.DatabaseTest">
+    <configuration default="false" name="AddressTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="AddressTest" file="$PROJECT_DIR$/test/AddressTest.php" scope="Class" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DatabaseTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="DatabaseTest" file="$PROJECT_DIR$/test/DatabaseTest.php" scope="Class" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -270,17 +305,20 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -291,18 +329,23 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="false" name="TEST" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/test/test.php">
       <CommandLine workingDirectory="$PROJECT_DIR$" />
       <RunnerSettings RunnerId="PhpRunner" />
       <ConfigurationWrapper RunnerId="PhpRunner" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="PHP Script.TEST" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.AddressTest" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.DatabaseTest" />
     </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.DatabaseTest" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.AddressTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -338,54 +381,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18081991" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32808024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31661892" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22547585" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31622747" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32808024" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18228404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3982808" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19667171" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33588958" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3982808" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33742332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32808024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18683812" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31661892" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32808024" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19866072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33742332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3982808" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -408,12 +428,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/inc/EntryRoot.php">
+    <entry file="file://$PROJECT_DIR$/inc/EntryRoot.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -423,7 +443,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1296">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -433,7 +453,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="768">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -443,7 +463,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2896">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7#69#0#PHP" expanded="true" />
+            <element signature="e#7#69#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -453,7 +473,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1312">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7#69#0#PHP" expanded="true" />
+            <element signature="e#7#69#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -471,7 +491,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -481,7 +501,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="649" max-vertical-offset="1312">
           <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
-            <element signature="e#7#69#0#PHP" expanded="true" />
+            <element signature="e#7#69#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -529,7 +549,7 @@
         <state vertical-scroll-proportion="0.16842106" vertical-offset="0" max-vertical-offset="1808">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -539,7 +559,7 @@
         <state vertical-scroll-proportion="0.5017544" vertical-offset="18" max-vertical-offset="1424">
           <caret line="19" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="17" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -549,7 +569,7 @@
         <state vertical-scroll-proportion="0.71929824" vertical-offset="870" max-vertical-offset="1440">
           <caret line="80" column="57" selection-start-line="80" selection-start-column="57" selection-end-line="80" selection-end-column="57" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -559,7 +579,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1216">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -576,7 +596,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1584">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -611,40 +631,22 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/Database.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49612403" vertical-offset="1328" max-vertical-offset="3104">
-          <caret line="103" column="29" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="29" />
-          <folding>
-            <element signature="e#7#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7176781" vertical-offset="0" max-vertical-offset="379">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inc/Address.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1296">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/EntryRoot.php">
+    <entry file="file://$PROJECT_DIR$/inc/EntryRoot.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32" vertical-offset="0" max-vertical-offset="600">
           <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -654,11 +656,7 @@
         <state vertical-scroll-proportion="0.29382303" vertical-offset="416" max-vertical-offset="1088">
           <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
-            <marker date="1489863793926" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..guest_response..." />
-            <marker date="1489863793926" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..guest_response..." />
-            <marker date="1489863793926" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1489863793926" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -668,25 +666,7 @@
         <state vertical-scroll-proportion="0.15358362" vertical-offset="758" max-vertical-offset="1408">
           <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="SELECT ALL F..adv_span..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="SELECT ALL F..adv_span..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="SELECT ALL F..adv_span..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="SELECT ALL F..adv_span..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="UPDATE adv_s..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="UPDATE adv_s..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="UPDATE adv_s..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="UPDATE adv_s..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="UPDATE adv_s..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="UPDATE adv_s..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="UPDATE adv_s..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="UPDATE adv_s..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="UPDATE adv_s..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="UPDATE adv_s..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="UPDATE adv_s..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1489946997230" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -696,19 +676,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1488">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
-            <marker date="1489950371674" expanded="true" signature="-1:-1" placeholder="SELECT ALL F..adv_content..." />
-            <marker date="1489950371674" expanded="true" signature="-1:-1" placeholder="SELECT ALL F..adv_content..." />
-            <marker date="1489950371674" expanded="true" signature="-1:-1" placeholder="SELECT ALL F..adv_content..." />
-            <marker date="1489950371674" expanded="true" signature="-1:-1" placeholder="SELECT ALL F..adv_content..." />
-            <marker date="1489950371674" expanded="true" signature="-1:-1" placeholder="SELECT ALL F..adv_content..." />
-            <marker date="1489950371674" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1489950371674" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1489950371674" expanded="true" signature="-1:-1" placeholder="UPDATE adv_c..." />
-            <marker date="1489950371674" expanded="true" signature="-1:-1" placeholder="UPDATE adv_c..." />
-            <marker date="1489950371674" expanded="true" signature="-1:-1" placeholder="UPDATE adv_c..." />
-            <marker date="1489950371674" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1489950371674" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <element signature="e#6#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -718,33 +686,114 @@
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2128">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7#69#0#PHP" expanded="true" />
+            <element signature="e#7#69#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4071856" vertical-offset="0" max-vertical-offset="668">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/AdvType.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.023952097" vertical-offset="240" max-vertical-offset="2336">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        <state vertical-scroll-proportion="-7.68" vertical-offset="0" max-vertical-offset="2336">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#6#68#0#PHP" expanded="true" />
-            <marker date="1489951643960" expanded="true" signature="514:549" placeholder="SELECT ALL F..adv_type..." />
-            <marker date="1489951643960" expanded="true" signature="514:550" placeholder="SELECT ALL F..adv_type..." />
-            <marker date="1489951643960" expanded="true" signature="819:843" placeholder="SELECT ALL F..adv_type..." />
-            <marker date="1489951643960" expanded="true" signature="1111:1160" placeholder="SELECT ALL F..adv_type..." />
-            <marker date="1489951643960" expanded="true" signature="1421:1470" placeholder="SELECT ALL F..adv_type..." />
-            <marker date="1489951643960" expanded="true" signature="1765:1803" placeholder="SELECT ALL F..adv_type..." />
-            <marker date="1489951643960" expanded="true" signature="1765:1804" placeholder="SELECT ALL F..adv_type..." />
-            <marker date="1489951643960" expanded="true" signature="1765:1809" placeholder="SELECT ALL F..adv_type..." />
-            <marker date="1489951643960" expanded="true" signature="2105:2152" placeholder="INSERT INTO ..." />
-            <marker date="1489951643960" expanded="true" signature="2530:2558" placeholder="UPDATE adv_t..." />
-            <marker date="1489951643960" expanded="true" signature="2530:2582" placeholder="UPDATE adv_t..." />
-            <marker date="1489951643960" expanded="true" signature="2530:2607" placeholder="UPDATE adv_t..." />
-            <marker date="1489951643960" expanded="true" signature="2530:2608" placeholder="UPDATE adv_t..." />
-            <marker date="1489951643960" expanded="true" signature="2908:2957" placeholder="UPDATE adv_t..." />
-            <marker date="1489951643960" expanded="true" signature="2908:2958" placeholder="UPDATE adv_t..." />
-            <marker date="1489951643960" expanded="true" signature="3254:3304" placeholder="UPDATE adv_t..." />
+            <element signature="e#6#68#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/\AdvTag">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>\AdvTag</OriginalElement>
+          <nodes>
+            <node x="" y="">\AdvContent</node>
+            <node x="" y="">\AdvCategory</node>
+            <node x="" y="">\NLSubscriber</node>
+            <node x="" y="">\DBHelper</node>
+            <node x="" y="">\MessageToUser</node>
+            <node x="" y="">\MessageToAdvertiser</node>
+            <node x="" y="">\Database</node>
+            <node x="" y="">\AdvSpan</node>
+            <node x="" y="">\Address</node>
+            <node x="" y="">\AdvTag</node>
+            <node x="" y="">\GuestResponse</node>
+            <node x="" y="">\AdvType</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.45472703062583225" x="1443.0" y="711.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+            <Category>Constants</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/class diagram.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/AddressTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.84" vertical-offset="0" max-vertical-offset="272">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="622">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3042789" vertical-offset="0" max-vertical-offset="631">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/php/pear/PHPUnit/Framework/Assert/Functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58947366" vertical-offset="6720" max-vertical-offset="38272">
+          <caret line="483" column="14" selection-start-line="483" selection-start-column="11" selection-end-line="483" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/Database.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27303755" vertical-offset="1920" max-vertical-offset="3072">
+          <caret line="132" column="11" selection-start-line="132" selection-start-column="11" selection-end-line="132" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/DatabaseTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8397329" vertical-offset="121" max-vertical-offset="768">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#90#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

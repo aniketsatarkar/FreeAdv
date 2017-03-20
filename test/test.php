@@ -1,6 +1,6 @@
 <?php
 
-    include_once 'inc/EntryRoot.inc.php';
+    include_once '../inc/EntryRoot.inc.php';
 
     // Database connection credentials.
     $host     = "localhost";

@@ -158,11 +158,11 @@ class Database
 
     /**
      * Connect to database with instance credentials and return connection object.
-     * @return mysqli mysqli connection object.
+     * @return mysqli connection object.
      */
     public function connect()
     {
-        $this->$db_conn = mysqli_connect($this->host, $$this->user, $$this->password, $$this->database, $$this->socket);
+        $this->db_conn = mysqli_connect($this->host, $this->user, $this->password, $this->database, $this->socket);
         return $this->db_conn;
     }
 
@@ -173,9 +173,9 @@ class Database
     public function closeConnection()
     {
         if($this->db_conn != null)
-            return mysqli_close($this->db_conn);
-        else
-            return false;
+            return $this->db_conn->close();
+
+        return false;
     }
 
     /**

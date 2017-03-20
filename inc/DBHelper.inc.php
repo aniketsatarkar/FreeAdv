@@ -12,7 +12,7 @@ abstract class DBHelper
 {
     /**
      * Database connection object.
-     * @var null | mysqli
+     * @var null|mysqli
      */
     private $db_conn = null;
 

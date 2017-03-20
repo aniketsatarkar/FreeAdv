@@ -5,7 +5,7 @@
  */
 
 /**
- * Class DBHelper
+ * @Class DBHelper
  * Abstract class that provide database helper function.
  */
 abstract class DBHelper

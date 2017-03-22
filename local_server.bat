@@ -1,1 +1,1 @@
-PHP -S localhost:1234
+PHP -S localhost:1234 -c config/php.ini

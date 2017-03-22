@@ -1,1 +1,1 @@
-PHP -S 0.0.0.0:1234
+PHP -S 0.0.0.0:1234 -c config/php.ini
